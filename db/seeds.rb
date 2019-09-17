@@ -10,6 +10,7 @@ p "destroying all existing seeds"
 Shop.destroy_all
 
 p "creating new seeds"
+
 Shop.create!(
   name: 'Colette',
   schedule:
