@@ -3,7 +3,38 @@
   justify-content: space-between;
 
 }
-.shopschedule {
-  height : 300px;
+.schedule {
+  width: 350px;
+}
+.bold {
+  font-weight: 600;
+}
+.marginli {
+  margin: 2px;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
   width: 500px;
+}
+.btn {
+  margin: 15px;
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  zoom: 1.1;
+  opacity: 1;
+}
+.buttonline {
+  display: flex;
+  justify-content: space-around;
 }

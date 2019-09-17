@@ -1,3 +1,18 @@
 // Import page-specific CSS files here.
 @import "home";
 @import "show";
+
+.container {
+  display:flex;
+  flex-direction: column;
+
+}
+
+.title {
+
+}
+
+.shops {
+  list-style: none;
+}
+
