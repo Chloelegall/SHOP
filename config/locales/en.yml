@@ -30,4 +30,18 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  lundi: "Monday"
+  mardi: "Tuesday"
+  mercredi: "Wednesday"
+  jeudi: "Thursday"
+  vendredi: "Friday"
+  samedi: "Saturday"
+  dimanche: "Sunday"
+  Monday: "lundi"
+  Tuesday: "mardi"
+  Wednesday: "mercredi"
+  Thursday: "jeudi"
+  Friday: "vendredi"
+  Saturday: "samedi"
+  Sunday: "dimanche"
+

@@ -1,0 +1,5 @@
+<h1>Shop</h1>
+<% @shops.each do |shop| %>
+<%= link_to shop.name, shop_path(shop) %>
+<br>
+<% end %>
