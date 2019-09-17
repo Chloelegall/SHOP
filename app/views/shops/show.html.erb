@@ -1,11 +1,32 @@
-<div class="schedule">
-<b><%= I18n.translate((Time.now).strftime("%A")) %>
-<%= @shop.schedule["#{I18n.translate((Time.now).strftime("%A"))}"] %></b>
-<br>
-<% for i in 1..6 do %>
-<%= I18n.translate((Time.now + i.day).strftime("%A")) %>
-<%= @shop.schedule["#{I18n.translate((Time.now + i.day).strftime("%A"))}"] %>
-<br>
-<% end %>
+<div class="container">
+  <div class="bold">Horaires :</div>
+    <div class="schedule">
+
+      <ul>
+            <li class ="weekday bold">
+              <div class="marginli">
+              <%= I18n.translate((Time.now).strftime("%A")) %>
+
+              </div>
+              <div class="marginli">
+              <%= @shop.schedule["#{I18n.translate((Time.now).strftime("%A"))}"] %>
+
+              </div>
+            </li>
+          <% for i in 1..6 do %>
+            <li class="weekday">
+              <div class="marginli">
+              <%= I18n.translate((Time.now + i.day).strftime("%A")) %>
+            </div>
+            <div class="marginli">
+              <%= @shop.schedule["#{I18n.translate((Time.now + i.day).strftime("%A"))}"] %>
+            </div>
+            </li>
+          <% end %>
+        </div>
+      </ul>
+    </div>
+      <div class="buttonline">
+        <%= link_to "Back", root_path, class:"btn" %>
+      </div>
 </div>
-<%= link_to "Back", root_path %>
