@@ -1,3 +1,10 @@
-<% @shops.each do |shop| %>
-  <%= shop.name %>
+<div class="schedule">
+<b><%= I18n.translate((Time.now).strftime("%A")) %>
+<%= @shop.schedule["#{I18n.translate((Time.now).strftime("%A"))}"] %></b>
+<br>
+<% for i in 1..6 do %>
+<%= I18n.translate((Time.now + i.day).strftime("%A")) %>
+<%= @shop.schedule["#{I18n.translate((Time.now + i.day).strftime("%A"))}"] %>
+<br>
 <% end %>
+</div>
